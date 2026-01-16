@@ -58,12 +58,12 @@ def load_assets():
 
 summarizer, dataset = load_assets()
 
-st.title("📰 Enterprise News Summarization Engine")
+st.title("Enterprise News Summarization Engine")
 
 if 'input_text' not in st.session_state:
     st.session_state.input_text = ""
 
-if st.sidebar.button("🎲 Load Random Article"):
+if st.sidebar.button(" Load Random Article"):
     shuffled = dataset.shuffle(seed=random.randint(0, 10000), buffer_size=100)
     sample = next(iter(shuffled))
     st.session_state.input_text = sample['document']
