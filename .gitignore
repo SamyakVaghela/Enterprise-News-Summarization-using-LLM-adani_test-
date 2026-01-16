@@ -1,0 +1,4 @@
+.config/
+cloudflared*
+logs.txt
+sample_data/
